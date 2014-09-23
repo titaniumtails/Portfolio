@@ -12,5 +12,7 @@ $(document).ready(function() {
   	$('.navbar').css('background', randomColor());
   });
 
+  $('#TestButton2').popover();
+
 });
 	
