@@ -1,13 +1,14 @@
 $(document).ready(function() {
 	
 	function randomColor() {
-    
     return '#' + Math.random().toString(16).slice(2, 8);
 	}
 
-  $('#ExtraButton').on("click", function() {
+  $('#TestButton').on("click", function(event) {
+  	event.preventDefault();
   
-  	alert("What up WDI");
+  	console.log("What up WDI");
+  
   	$('.navbar').css('background', randomColor());
   });
 
